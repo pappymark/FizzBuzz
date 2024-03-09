@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        body h1 {
+            color: red;
+            font-size: 5em;
+            padding-left: 150px;
+            text-shadow: 2px 2px 5px #000;
+            margin-bottom: 0;
+        }
+
+        body h3 {
+            margin-top: 0;
+            color: aqua;
+            font-size: 2em;
+            text-shadow: 2px 2px 5px #000;
+            padding-left: 200px;
+
+        }
+        
+        #mgaResulta {
+            padding: 50px;
+            font-size: 3em;
+            font-weight: 600;
+            color: rgba(254, 161, 94, 0.997);
+            text-shadow: 2px 2px 5px #3d362d;
+            
+        }
+        
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+        <h1>Fizz-Buzz</h1>
+        <h3>with PappyMark</h3>
+        <div id="mgaResulta" ></div>
+
+    <script>
+        /*Fizz buzz is a group word game for children to teach them about division. Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", and any number divisible by five with the word "buzz", and any number divisible by both three and five with the word "fizzbuzz".
+        
+        condition ? expressionIfTrue expressionIfFalse
+
+        */
+
+
+
+        (function fizzBuzz () {
+
+            let numeroNgBata = prompt("Pakilagay ng Numero");
+            let resulta = document.getElementById ("mgaResulta");
+
+            for( let numero = 1; numero <= numeroNgBata; numero++){
+                const sagot = ((numero % 3 === 0 ? "Fizz" : "")+(numero % 5 === 0 ? "Buzz" : "")) || numero;
+                resulta.innerHTML += sagot + " ";
+        }
+        }
+
+        )();
+
+
+        fizzBuzz();
+
+
+        // let numeroNgBata = 100;
+        // const resulta = document.getElementById ("mgaResulta");
+
+        // for( let numero = 1; numero <= numeroNgBata; numero++){
+        //         let sagot = "";
+        //         if (numero % 3 === 0) {
+        //             sagot += "Fizz";
+        //         }
+        //         if (numero % 5 === 0) {
+        //             sagot += "Buzz";
+        //         }
+
+
+        //     resulta.innerHTML += (  sagot   ||  numero ) + "<p> " ;
+        // }
+
+
+
+
+
+        //     if (number % 3 === 0 && number % 5 === 0){
+        //         console.log("FizzBuzz");
+        //     }else if (number % 5 === 0){
+        //         console.log ("Buzz");
+        //     }else if (number % 3 === 0){
+        //         console.log("Fizz");
+        //     }else{
+        //         console.log(number);
+        //     }
+           
+        // }
+        
+
+
+    </script>
+</body>
+</html>
